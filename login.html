@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login / Register | SportPath</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="auth-page">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">SportPath</a>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="sports.html">Sports</a>
+          <a href="careers.html">Careers</a>
+          <a href="academies.html">Academies</a>
+          <a href="scholarships.html">Scholarships</a>
+          <a href="news.html">News</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html" class="nav-cta active">Login / Register</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="container section">
+        <div class="section-heading" style="text-align: center;">
+          <p class="eyebrow">Join the platform</p>
+          <h1 id="auth-title">Create your SportPath account</h1>
+        </div>
+        <div class="about-card form-card">
+          <form id="auth-form" novalidate>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required />
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required />
+
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Create a password" required />
+
+            <button id="auth-submit" class="btn btn-primary" type="submit">Register</button>
+          </form>
+          <p id="form-message" class="form-message"></p>
+          <button id="auth-switch" class="auth-switch" type="button">Already have an account? Login</button>
+        </div>
+      </section>
+    </main>
+
+    <div id="details-modal" class="details-modal" role="dialog" aria-modal="true" aria-labelledby="details-modal-title" hidden>
+      <div class="details-modal-content">
+        <h2 id="details-modal-title">Please enter your user details</h2>
+        <p>Complete your name, email, and password before registering.</p>
+        <button id="details-modal-close" class="btn btn-primary" type="button">Continue</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
