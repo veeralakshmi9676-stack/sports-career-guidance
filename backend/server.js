@@ -3,7 +3,7 @@ const fs = require('fs/promises');
 const path = require('path');
 
 const ROOT_DIR = path.resolve(__dirname, '../frontend');
-const PORT = 3000;
+const PORT = process.env.PORT||3000;
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
